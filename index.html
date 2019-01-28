@@ -10,6 +10,12 @@
 	<section id="game_div"></section>
 	<footer></footer>
 	<script type="text/javascript" src="data.json"></script>
-	<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script>
+    (function(){
+        var myGame = new Game("game_div", {game:"flashcard", data : flashcard_QA});
+        console.log(myGame);
+    })()
+    </script>
 </body>
 </html>

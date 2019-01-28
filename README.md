@@ -9,6 +9,12 @@ This project demonstrate that how advance features of javascript such as Prototy
 
 **Prototype** - Prototype is like available to all objects as it is added to Objects by default. It allows us to create reusable objects.
 
+**Document Fragment** - This allows us to build out divs **Off Dome** and append them to the body once they are all collected. Each time you modifies the DOM, it forces a redraw, hence using Document Fragment we are getting performance advantage here.
+It saves us from DOM redrawing everytime.
+
+The **DocumentFargment** interface represents a minimal document object that has no parent. A common use for documentFragment is to create one, assemble a DOM subtree within it, then append or insert the fragment into the DOM using NODE interface method such as appendChild() or insertBefore().
+ 
+
 #### Psuedocode/sketch of the application
 
 **Game**
@@ -33,6 +39,8 @@ This project demonstrate that how advance features of javascript such as Prototy
     - Holders
     ----------
     accept or reject
+
+
 
 
 
