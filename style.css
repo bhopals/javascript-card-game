@@ -63,13 +63,14 @@ body{
 	margin-right: 40px;
 	margin-bottom: 40px;
 	width: 200px;
-	height: 300px;
+	height: 320px;
 	cursor: pointer;
 	position: relative;
 }
 
 .card_front, .card_back {
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -133,7 +134,7 @@ body{
 }
 .holder_target{
 	border: dotted medium #fff;
-    height: 330px;
+    height: 370px;
     width: 230px;
     position: absolute;
     top: 0px;
