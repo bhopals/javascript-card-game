@@ -1,0 +1,16 @@
+.flip_card .flip{
+	transform: rotateY(180deg);
+	transform-origin: center;
+	width: 222px;
+	height: 300px;
+}
+
+.flip{
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.card_container.slide_over{
+	transform: translate(250px);
+	.transition: 0.6s;
+}
