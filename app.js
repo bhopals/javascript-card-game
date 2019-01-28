@@ -1,25 +1,27 @@
 //Starting the code with Semicolon if this ever be minified the it will not have any issue.
 ;(function(window){
 
-    // *Game**
+    //**Game**
     var Game = function(el, options){
         
         this.el = document.getElementById(el);
         this.options = options;
         
-        //     -   Info Section
+        //Info Section
         this.info_div = document.createElement('div');
         this.info_div.id = "info_div";
         this.el.appendChild(this.info_div);
 
-        //     -   Deck
+        //Deck
         this.deck_div = document.createElement('div');
         this.deck_div.id = "deck_div";
         this.el.appendChild(this.deck_div);
         this.gameDeck = new Deck(this.deck_div, options);
         this.gameDeck.buildDeck();
-        //     -   Discard Piles
-        //     -   Rules
+
+        //Discard Piles
+        
+        //Rules
 
 
     }
@@ -29,7 +31,7 @@
     
     
 
-    // **Deck**
+    //**Deck**
     var Deck = function(deck_div, option) {
         this.deckData = option.data;
         this.buildDeck = function() {
@@ -44,15 +46,18 @@
             deck_div.appendChild(parentFragment);
         }
     
-        //     -   Cards
-        //     -   shuffle
-        //     -   stack
+        //Cards
+
+        //shuffle
+        
+        //stack
+
     }
 
 
     
 
-    // **Cards**
+    //**Cards**
     var Cards = function() {
         
         this.id = "";
@@ -75,7 +80,7 @@
                 backValDiv = document.createElement('div'),
                 catDiv = document.createElement('div');
             flipDiv.className = 'flip';
-            catDiv.className = 'back_val';
+            catDiv.className = 'cat_val';
             backValDiv.className = 'back_val';
             frontValDiv.className = 'front_val';
 
@@ -83,33 +88,42 @@
             backValDiv.innerHTML = this.data.a;
             catDiv.innerHTML = this.data.category;
 
-            this.cardFront.appendChild(frontValDiv);
             this.cardFront.appendChild(catDiv);
-
             this.cardBack.appendChild(backValDiv);
-            
-            flipDiv.appendChild(this.cardFront);
+            this.cardFront.appendChild(frontValDiv);
+
             flipDiv.appendChild(this.cardBack);
+            flipDiv.appendChild(this.cardFront);
 
             this.cardContainer.id = this.id;
             this.cardContainer.appendChild(flipDiv);
-
             parentFragment.appendChild(this.cardContainer);
+
         }
         
-        //     -   val
-        //     -   suit
-        //     -   flip
+        //val
+
+
+        //suit
+        
+        
+        //flip
+    
+    
     }
 
     
     
     
 
-    // **Discard Piles**
+    //**Discard Piles**
     var DiscardPiles = function() {
-        //     - Holders
-        //     accept or reject
+
+        //Holders
+
+        //accept or reject
+
+
     }
     
     window.Game = Game;
