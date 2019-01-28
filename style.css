@@ -1,0 +1,185 @@
+/*create responsive container*/
+body{
+	background-color: #e3e3e3;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+#standard-deck{
+	width: 1420px;
+	margin: 0px auto;
+	position: relative;
+	/*add overflow hidden to get rid of the flash inbetween cards*/
+	overflow: hidden;
+	min-height: 800px;
+}
+/*showing multiple hovers at once*/
+#standard-deck:hover .card_front{
+	background-color: #fffcf6;
+}
+#info_cont, #deck_cont, #discard_cont{
+  	position:relative;
+}
+#info_div{
+	background-color: #666;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#deck_div{
+  	min-height: 400px;
+  	width: 540px;
+  	float:left;
+  	margin: 0px 1em;
+  	position:relative;
+}
+#discard_div{
+	width:auto;
+	float:left;
+}
+.suit_container {
+    height: 60px;
+    width: 30px;
+    position: absolute;
+    font-size: 1.5em;
+    text-align: center;
+}
+.diamonds .suit_container, 
+.hearts .suit_container{
+	color: red;
+}
+.suit_container:last-child {
+	right:10px;
+	bottom: 10px;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.suit_container img{
+    width: 30px;
+    bottom: 0px;
+}
+
+.card_container{
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	width: 200px;
+	height: 300px;
+	cursor: pointer;
+	position: relative;
+}
+
+.card_front, .card_back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	border: thin solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	width: 180px;
+	height: 300px;
+	background-color: white;
+	text-align: center;
+	line-height: 1.5em
+}
+
+.card_front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-position: -86px -69px;
+}
+
+.card_back {
+	transform: rotateY(180deg);
+	background-position: -915px -867px;
+}
+.back_val img {
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.back_val a{
+	border: thin solid #ccc;
+	display: block;
+    padding: 10px;
+}
+.standard-deck .card_back {
+	background-image: url(./images/stock-vector-playing-cards-spade-suit-highly-detailed-vector-illustration-eps-contains-transparences-97643009.jpg);
+}
+.card_category, .cat_val {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0px;
+    font-size: .8em;
+    letter-spacing: 0.5px;
+}
+.stacked_card{
+	position: absolute;
+}
+/*Solitair*/
+.holder_container{
+	position: relative;
+	height: 330px;
+	width: 230px;
+}
+.holder_label{
+	padding: 1em;
+	color: #fff;
+}
+.holder_target{
+	border: dotted medium #fff;
+    height: 330px;
+    width: 230px;
+    position: absolute;
+    top: 0px;
+}
+.holder_drop{
+	position: absolute;
+	z-index: -1;
+}
+.holder_drop .card_container {
+    position: absolute;
+}
+
+.row{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 320px;
+}
+.row.zone{
+	margin-bottom: 2em;
+    padding: 1em;
+}
+
+button {
+    border-radius: 0px;
+    padding: 5px 10px;
+    background-color: white;
+    border: thin solid #ccc;
+    font-size: 1.1em;
+}
+
+.hearts .card_back,
+.diamonds .card_back,
+.clubs .card_back,
+.spades .card_back {
+	background: repeating-linear-gradient(
+		45deg,
+		#606dbc,
+		#606dbc 10px,
+		#465298 10px,
+		#465298 20px
+	);
+}
+
+img{
+	width: 40px;
+
+}

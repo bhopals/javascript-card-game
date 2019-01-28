@@ -5,6 +5,34 @@ This project demonstrate that how advance features of javascript such as Prototy
 
 
 
+#### JavaScript Prototypes and Dynamic Elements
+
+**Prototype** - Prototype is like available to all objects as it is added to Objects by default. It allows us to create reusable objects.
+
+#### Psuedocode/sketch of the application
+
+**Game**
+    -   Info Section
+    -   Deck
+    -   Discard Piles
+    -   Rules
+
+**Deck**
+    -   Cards
+    -----------
+    -   shuffle
+    -   stack
+
+**Cards**
+    -   val
+    -   suit
+    ----------
+    -   flip
+
+**Discard Piles**
+    - Holders
+    ----------
+    accept or reject
 
 
 
