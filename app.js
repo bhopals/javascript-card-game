@@ -136,6 +136,7 @@
 			learnMore.addEventListener("click", function(e){
 				e.stopPropagation();
 			})
+
 			backValDiv.appendChild(learnMore);
 			// 	suit
 			catDiv.innerHTML = this.data.category;
@@ -158,6 +159,7 @@
 		}
 	}
 	
+
 	var cardClick = (function(e){
 		var counter = 0;
 		return function (e){
@@ -167,6 +169,7 @@
 			counter++;
 		}
 	})()
+
 	function cardDrag(e){
 		e.dataTransfer.setData("text/plain", e.currentTarget.id)
 	}
@@ -193,6 +196,7 @@
 			return holderContainer;
 		}
 	}
+	
 	DiscardPile.prototype.cardDrop =function(e){
 		var cardID = e.dataTransfer.getData("text/plain");
 		var cardDragging = document.getElementById(cardID);
