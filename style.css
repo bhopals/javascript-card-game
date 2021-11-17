@@ -12,6 +12,7 @@ body{
 	overflow: hidden;
 	min-height: 800px;
 }
+
 /*showing multiple hovers at once*/
 #standard-deck:hover .card_front{
 	background-color: #fffcf6;
@@ -46,6 +47,7 @@ body{
 .hearts .suit_container{
 	color: red;
 }
+
 .suit_container:last-child {
 	right:10px;
 	bottom: 10px;
