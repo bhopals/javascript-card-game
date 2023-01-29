@@ -8,7 +8,7 @@ body{
 	width: 1420px;
 	margin: 0px auto;
 	position: relative;
-	/*add overflow hidden to get rid of the flash inbetween cards*/
+	/*add overflow hidden to get rid of the flash in between cards*/
 	overflow: hidden;
 	min-height: 800px;
 }
