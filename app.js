@@ -3,7 +3,7 @@
 	var Game = function(el, option){
 		this.el = document.getElementById(el);
 		this.option = option;
-		// 	Info section
+		// 	Info section layout
 	
 		this.info_div = document.createElement('div');
 		this.info_div.id = "info_div";
