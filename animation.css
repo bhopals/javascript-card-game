@@ -14,3 +14,9 @@
 	transform: translate(250px);
 	.transition: 0.6s;
 }
+
+.card_item_ {
+	width:20%;
+	height:100%;
+}
+	
