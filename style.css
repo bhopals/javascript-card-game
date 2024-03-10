@@ -17,7 +17,7 @@ body{
 #standard-deck:hover .card_front{
 	background-color: #fffcf6;
 }
-#info_cont, #deck_cont, #discard_cont, #info_section {
+#info_cont, #deck_cont, #discard_cont, #info_section, #info_story {
   	position:relative;
 }
 #info_div{
