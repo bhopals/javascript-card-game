@@ -12,6 +12,10 @@ body{
 	overflow: hidden;
 	min-height: 800px;
 }
+#shipping-label {
+	width: 120px;
+	margin: 0px auto;
+}
 
 /*showing multiple hovers at once*/
 #standard-deck:hover .card_front{
